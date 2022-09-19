@@ -1,5 +1,6 @@
 import { useState } from "react";
 import shuffle from "just-shuffle";
+import { Link } from "react-router-dom";
 
 export function Header() {
   const [navigation, setNavigation] = useState([
@@ -16,9 +17,9 @@ export function Header() {
       </button>
       <nav className="space-x-4">
         {navigation.map((item) => (
-          <a key={item.name} href={item.href}>
+          <Link key={item.name} to={item.href}>
             {item.name}
-          </a>
+          </Link>
         ))}
         {/* <a href="/">Home</a>
         <a href="/about">About</a>
