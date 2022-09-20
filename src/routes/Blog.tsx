@@ -27,7 +27,7 @@ export const posts = [
 ];
 export function Blog() {
   return (
-    <div>
+    <div className="pt-20">
       <h1>Blog</h1>
       <div className="grid grid-cols-3 gap-6">
         {posts.map((post) => (

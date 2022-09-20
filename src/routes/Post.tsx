@@ -9,7 +9,7 @@ export function Post() {
     return <p>Couldn't find a post for slug {slug}</p>;
   }
   return (
-    <div>
+    <div className="pt-20">
       <h1>{post.title}</h1>
       <p>{post.content}</p>
     </div>
